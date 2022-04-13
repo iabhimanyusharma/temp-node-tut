@@ -9,7 +9,10 @@ const server = http.createServer((req, res) => {
     for (let i = 0; i < 1000; i++) {
       for (let j = 0; j < 1000; j++) {
         console.log(`${i} ${j}`)
-      }
+      }// here till the time this block code is executed, not only this page wont load
+      // but neother would the other two, the resources would stay occupied
+      // thats why ajax is mportamt , for offloading the tasks to system
+      
     }
     res.end('About Page')
   }
