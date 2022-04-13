@@ -34,3 +34,4 @@ console.log('Starting next');
 // thats where async comes in
 // we offload a task as soon as it starts and move to other one 
 // for example here, start comes first im console, then comes starting next and then comes done with the task
+// above example is also an example of a callback hell
