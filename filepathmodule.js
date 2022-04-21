@@ -1,12 +1,12 @@
 const path = require('path');
 
-console.log(path.sep);
+console.log(path.sep); // returns platform specififc path seperator, in case of node.js , it's '/'
 
 const filePath = path.join('/content', 'subfolder','test.txt');
 
 console.log(filePath);
 
-const base = path.basename(filePath); // provides basename.
+const base = path.basename(filePath); // provides basename. In ths case its test.txt
 
 console.log(base);
 
